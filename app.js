@@ -39,7 +39,7 @@ app.post("/", function (req, res) {
 
   const options = {
     method: "POST",
-    auth: "kaustubh:a9a8246ed77ea237a3f5a8e5c4d7e2fb-us10",
+    auth: "kaustubh:<your mailchimp key>",
   };
   const requestt = https.request(url, options, function (response) {
     if (response.statusCode === 200) {
@@ -63,7 +63,3 @@ app.post("/failure", function (req, res) {
 app.listen(process.env.PORT || 3000, function () {
   console.log("the server has started on port 3000");
 });
-
-// a9a8246ed77ea237a3f5a8e5c4d7e2fb - us10;
-
-// b921c9f34d;
